@@ -1,0 +1,174 @@
+
+03/28 12:05:08: Launching 'MainActivity' on Pixel 2 API 30.
+$ adb shell am start -n "com.example.ipfs/com.example.ipfs.MainActivity" -a android.intent.action.MAIN -c android.intent.category.LAUNCHER
+Connected to process 10108 on device 'emulator-5554'.
+Capturing and displaying logcat messages from application. This behavior can be disabled in the "Logcat output" section of the "Debugger" settings page.
+D/NetworkSecurityConfig: No Network Security Config specified, using platform default
+D/NetworkSecurityConfig: No Network Security Config specified, using platform default
+D/libEGL: loaded /vendor/lib/egl/libEGL_emulation.so
+D/libEGL: loaded /vendor/lib/egl/libGLESv1_CM_emulation.so
+D/libEGL: loaded /vendor/lib/egl/libGLESv2_emulation.so
+W/om.example.ipf: Accessing hidden method Landroid/view/View;->computeFitSystemWindows(Landroid/graphics/Rect;Landroid/graphics/Rect;)Z (greylist, reflection, allowed)
+W/om.example.ipf: Accessing hidden method Landroid/view/ViewGroup;->makeOptionalFitsSystemWindows()V (greylist, reflection, allowed)
+I/System.out: Ipfs testing
+I/System.out: Path is :/data/user/0/com.example.ipfs/files/ipfslite
+W/om.example.ipfs: type=1400 audit(0.0:72107): avc: denied { bind } for scontext=u:r:untrusted_app:s0:c156,c256,c512,c768 tcontext=u:r:untrusted_app:s0:c156,c256,c512,c768 tclass=netlink_route_socket permissive=0 b/155595000 app=com.example.ipfs
+W/om.example.ipfs: type=1400 audit(0.0:72108): avc: denied { read } for name="somaxconn" dev="proc" ino=841760 scontext=u:r:untrusted_app:s0:c156,c256,c512,c768 tcontext=u:object_r:proc_net:s0 tclass=file permissive=0 app=com.example.ipfs
+E/GoLog: 2021-03-28T06:05:12.578Z	[33mWARN[0m	ipfslite	go-log/log.go:175	failed to dial QmNnooDu7bfjPFoTZYxMNLWUQJyrVwtbZg5gBMjTezGAJN: no good addresses
+W/om.example.ipfs: type=1400 audit(0.0:72110): avc: denied { bind } for scontext=u:r:untrusted_app:s0:c156,c256,c512,c768 tcontext=u:r:untrusted_app:s0:c156,c256,c512,c768 tclass=netlink_route_socket permissive=0 b/155595000 app=com.example.ipfs
+E/GoLog: 2021-03-28T06:05:12.582Z	[33mWARN[0m	ipfslite	go-log/log.go:175	failed to dial QmbLHAnMoJPWSCR5Zhtx6BHJX9KiKNN6tpvbUcqanj75Nb: no good addresses
+    2021-03-28T06:05:12.582Z	[33mWARN[0m	ipfslite	go-log/log.go:175	failed to dial QmcZf59bWwK5XFi76CZX8cbJ4BhTzzA3gU1ZjYZcYW3dwt: no good addresses
+    2021-03-28T06:05:12.582Z	[33mWARN[0m	ipfslite	go-log/log.go:175	failed to dial QmQCU2EcMqAqQPR2i9bChDtGNJchTbq5TbXJJ16u19uLTa: no good addresses
+W/om.example.ipfs: type=1400 audit(0.0:72111): avc: denied { bind } for scontext=u:r:untrusted_app:s0:c156,c256,c512,c768 tcontext=u:r:untrusted_app:s0:c156,c256,c512,c768 tclass=netlink_route_socket permissive=0 b/155595000 app=com.example.ipfs
+E/GoLog: 2021-03-28T06:05:13.639Z	[33mWARN[0m	nat	go-log/log.go:180	failed to establish port mapping: %!s(<nil>)
+W/om.example.ipfs: type=1400 audit(0.0:72120): avc: denied { bind } for scontext=u:r:untrusted_app:s0:c156,c256,c512,c768 tcontext=u:r:untrusted_app:s0:c156,c256,c512,c768 tclass=netlink_route_socket permissive=0 b/155595000 app=com.example.ipfs
+I/chatty: uid=10156(com.example.ipfs) identical 1 line
+W/om.example.ipfs: type=1400 audit(0.0:72122): avc: denied { bind } for scontext=u:r:untrusted_app:s0:c156,c256,c512,c768 tcontext=u:r:untrusted_app:s0:c156,c256,c512,c768 tclass=netlink_route_socket permissive=0 b/155595000 app=com.example.ipfs
+E/GoLog: 2021-03-28T06:05:17.579Z	[33mWARN[0m	ipfslite	go-log/log.go:175	failed to dial : all dials failed
+      * [/ip6/2604:a880:800:10::4a:5001/tcp/4001] dial tcp6 [2604:a880:800:10::4a:5001]:4001: connect: network is unreachable
+      * [/ip4/104.236.76.40/tcp/4001] dial tcp4 0.0.0.0:4006->104.236.76.40:4001: i/o timeout
+    2021-03-28T06:05:17.579Z	[33mWARN[0m	ipfslite	go-log/log.go:175	failed to dial : all dials failed
+E/GoLog:   * [/ip6/2a03:b0c0:0:1010::23:1001/tcp/4001] dial tcp6 [2a03:b0c0:0:1010::23:1001]:4001: connect: network is unreachable
+      * [/ip4/178.62.158.247/tcp/4001] dial tcp4 0.0.0.0:4006->178.62.158.247:4001: i/o timeout
+    2021-03-28T06:05:17.579Z	[33mWARN[0m	ipfslite	go-log/log.go:175	failed to dial : all dials failed
+      * [/ip6/2400:6180:0:d0::151:6001/tcp/4001] dial tcp6 [2400:6180:0:d0::151:6001]:4001: connect: network is unreachable
+      * [/ip4/128.199.219.111/tcp/4001] dial tcp4 0.0.0.0:4006->128.199.219.111:4001: i/o timeout
+E/GoLog: 2021-03-28T06:05:17.582Z	[33mWARN[0m	ipfslite	go-log/log.go:175	failed to dial : all dials failed
+      * [/ip6/2604:a880:1:20::203:d001/tcp/4001] dial tcp6 [2604:a880:1:20::203:d001]:4001: connect: network is unreachable
+      * [/ip4/104.236.179.241/tcp/4001] dial tcp4 0.0.0.0:4006->104.236.179.241:4001: i/o timeout
+E/GoLog: 2021-03-28T06:05:17.582Z	[33mWARN[0m	ipfslite	go-log/log.go:180	only connected to 1 bootstrap peers out of 9
+E/GoLog: 2021-03-28T06:05:17.711Z	[33mWARN[0m	bitswap	go-log/log.go:175	no known addresses for self. cannot put provider.
+W/om.example.ipfs: type=1400 audit(0.0:72123): avc: denied { bind } for scontext=u:r:untrusted_app:s0:c156,c256,c512,c768 tcontext=u:r:untrusted_app:s0:c156,c256,c512,c768 tclass=netlink_route_socket permissive=0 b/155595000 app=com.example.ipfs
+I/Peer: AddFile onNext: bafybeicoeuelhqets2bxiteyo3sklehnlj6ukaxie3o3ktlmwrenqeuvi4
+I/Peer: AddFile: Complete
+I/System.out: Cid for uploaded data:bafybeicoeuelhqets2bxiteyo3sklehnlj6ukaxie3o3ktlmwrenqeuvi4
+I/System.out: opened file, lenght84590
+E/GoLog: 2021-03-28T06:05:17.782Z	[33mWARN[0m	bitswap	go-log/log.go:175	no known addresses for self. cannot put provider.
+W/om.example.ipfs: type=1400 audit(0.0:72124): avc: denied { bind } for scontext=u:r:untrusted_app:s0:c156,c256,c512,c768 tcontext=u:r:untrusted_app:s0:c156,c256,c512,c768 tclass=netlink_route_socket permissive=0 b/155595000 app=com.example.ipfs
+I/Peer: AddFile onNext: bafybeiepvqk3mbqalme5oyfnlqzjzthbqsdx6odrsfsrzu7t3ul73kbp5a
+    AddFile: Complete
+I/System.out: Uploaded file, CID: bafybeiepvqk3mbqalme5oyfnlqzjzthbqsdx6odrsfsrzu7t3ul73kbp5a
+I/System.out: ----------
+W/om.example.ipfs: type=1400 audit(0.0:72125): avc: denied { bind } for scontext=u:r:untrusted_app:s0:c156,c256,c512,c768 tcontext=u:r:untrusted_app:s0:c156,c256,c512,c768 tclass=netlink_route_socket permissive=0 b/155595000 app=com.example.ipfs
+I/chatty: uid=10156(com.example.ipfs) identical 8 lines
+W/om.example.ipfs: type=1400 audit(0.0:72135): avc: denied { bind } for scontext=u:r:untrusted_app:s0:c156,c256,c512,c768 tcontext=u:r:untrusted_app:s0:c156,c256,c512,c768 tclass=netlink_route_socket permissive=0 b/155595000 app=com.example.ipfs
+W/om.example.ipfs: type=1400 audit(0.0:72144): avc: denied { bind } for scontext=u:r:untrusted_app:s0:c156,c256,c512,c768 tcontext=u:r:untrusted_app:s0:c156,c256,c512,c768 tclass=netlink_route_socket permissive=0 b/155595000 app=com.example.ipfs
+I/chatty: uid=10156(com.example.ipfs) identical 18 lines
+W/om.example.ipfs: type=1400 audit(0.0:72206): avc: denied { bind } for scontext=u:r:untrusted_app:s0:c156,c256,c512,c768 tcontext=u:r:untrusted_app:s0:c156,c256,c512,c768 tclass=netlink_route_socket permissive=0 b/155595000 app=com.example.ipfs
+W/om.example.ipfs: type=1400 audit(0.0:72215): avc: denied { bind } for scontext=u:r:untrusted_app:s0:c156,c256,c512,c768 tcontext=u:r:untrusted_app:s0:c156,c256,c512,c768 tclass=netlink_route_socket permissive=0 b/155595000 app=com.example.ipfs
+W/om.example.ipfs: type=1400 audit(0.0:72216): avc: denied { bind } for scontext=u:r:untrusted_app:s0:c156,c256,c512,c768 tcontext=u:r:untrusted_app:s0:c156,c256,c512,c768 tclass=netlink_route_socket permissive=0 b/155595000 app=com.example.ipfs
+W/om.example.ipfs: type=1400 audit(0.0:72218): avc: denied { bind } for scontext=u:r:untrusted_app:s0:c156,c256,c512,c768 tcontext=u:r:untrusted_app:s0:c156,c256,c512,c768 tclass=netlink_route_socket permissive=0 b/155595000 app=com.example.ipfs
+W/om.example.ipfs: type=1400 audit(0.0:72227): avc: denied { bind } for scontext=u:r:untrusted_app:s0:c156,c256,c512,c768 tcontext=u:r:untrusted_app:s0:c156,c256,c512,c768 tclass=netlink_route_socket permissive=0 b/155595000 app=com.example.ipfs
+I/chatty: uid=10156(com.example.ipfs) identical 3 lines
+W/om.example.ipfs: type=1400 audit(0.0:72231): avc: denied { bind } for scontext=u:r:untrusted_app:s0:c156,c256,c512,c768 tcontext=u:r:untrusted_app:s0:c156,c256,c512,c768 tclass=netlink_route_socket permissive=0 b/155595000 app=com.example.ipfs
+W/om.example.ipfs: type=1400 audit(0.0:72249): avc: denied { bind } for scontext=u:r:untrusted_app:s0:c156,c256,c512,c768 tcontext=u:r:untrusted_app:s0:c156,c256,c512,c768 tclass=netlink_route_socket permissive=0 b/155595000 app=com.example.ipfs
+I/chatty: uid=10156(com.example.ipfs) identical 25 lines
+W/om.example.ipfs: type=1400 audit(0.0:72302): avc: denied { bind } for scontext=u:r:untrusted_app:s0:c156,c256,c512,c768 tcontext=u:r:untrusted_app:s0:c156,c256,c512,c768 tclass=netlink_route_socket permissive=0 b/155595000 app=com.example.ipfs
+E/GoLog: 2021-03-28T06:05:33.640Z	[33mWARN[0m	nat	go-log/log.go:180	failed to establish port mapping: %!s(<nil>)
+W/om.example.ipfs: type=1400 audit(0.0:72303): avc: denied { bind } for scontext=u:r:untrusted_app:s0:c156,c256,c512,c768 tcontext=u:r:untrusted_app:s0:c156,c256,c512,c768 tclass=netlink_route_socket permissive=0 b/155595000 app=com.example.ipfs
+I/chatty: uid=10156(com.example.ipfs) identical 1 line
+W/om.example.ipfs: type=1400 audit(0.0:72305): avc: denied { bind } for scontext=u:r:untrusted_app:s0:c156,c256,c512,c768 tcontext=u:r:untrusted_app:s0:c156,c256,c512,c768 tclass=netlink_route_socket permissive=0 b/155595000 app=com.example.ipfs
+W/om.example.ipfs: type=1400 audit(0.0:72306): avc: denied { bind } for scontext=u:r:untrusted_app:s0:c156,c256,c512,c768 tcontext=u:r:untrusted_app:s0:c156,c256,c512,c768 tclass=netlink_route_socket permissive=0 b/155595000 app=com.example.ipfs
+W/om.example.ipfs: type=1400 audit(0.0:72307): avc: denied { bind } for scontext=u:r:untrusted_app:s0:c156,c256,c512,c768 tcontext=u:r:untrusted_app:s0:c156,c256,c512,c768 tclass=netlink_route_socket permissive=0 b/155595000 app=com.example.ipfs
+W/om.example.ipfs: type=1400 audit(0.0:72308): avc: denied { bind } for scontext=u:r:untrusted_app:s0:c156,c256,c512,c768 tcontext=u:r:untrusted_app:s0:c156,c256,c512,c768 tclass=netlink_route_socket permissive=0 b/155595000 app=com.example.ipfs
+W/om.example.ipfs: type=1400 audit(0.0:72309): avc: denied { bind } for scontext=u:r:untrusted_app:s0:c156,c256,c512,c768 tcontext=u:r:untrusted_app:s0:c156,c256,c512,c768 tclass=netlink_route_socket permissive=0 b/155595000 app=com.example.ipfs
+W/om.example.ipfs: type=1400 audit(0.0:72310): avc: denied { bind } for scontext=u:r:untrusted_app:s0:c156,c256,c512,c768 tcontext=u:r:untrusted_app:s0:c156,c256,c512,c768 tclass=netlink_route_socket permissive=0 b/155595000 app=com.example.ipfs
+I/chatty: uid=10156(com.example.ipfs) identical 14 lines
+W/om.example.ipfs: type=1400 audit(0.0:72331): avc: denied { bind } for scontext=u:r:untrusted_app:s0:c156,c256,c512,c768 tcontext=u:r:untrusted_app:s0:c156,c256,c512,c768 tclass=netlink_route_socket permissive=0 b/155595000 app=com.example.ipfs
+I/System.out: =============================
+    Hello World
+E/GoLog: 2021-03-28T06:05:49.480Z	[33mWARN[0m	bitswap	go-log/log.go:175	no known addresses for self. cannot put provider.
+D/HostConnection: HostConnection::get() New Host Connection established 0xe9220140, tid 10162
+D/HostConnection: HostComposition ext ANDROID_EMU_CHECKSUM_HELPER_v1 ANDROID_EMU_native_sync_v2 ANDROID_EMU_native_sync_v3 ANDROID_EMU_native_sync_v4 ANDROID_EMU_dma_v1 ANDROID_EMU_direct_mem ANDROID_EMU_host_composition_v1 ANDROID_EMU_host_composition_v2 ANDROID_EMU_YUV_Cache ANDROID_EMU_async_unmap_buffer GL_OES_vertex_array_object GL_KHR_texture_compression_astc_ldr ANDROID_EMU_gles_max_version_2
+W/OpenGLRenderer: Failed to choose config with EGL_SWAP_BEHAVIOR_PRESERVED, retrying without...
+D/EGL_emulation: eglCreateContext: 0xe9202690: maj 2 min 0 rcv 2
+D/EGL_emulation: eglMakeCurrent: 0xe9202690: ver 2 0 (tinfo 0xe9554cd0) (first time)
+I/Gralloc4: mapper 4.x is not supported
+D/HostConnection: createUnique: call
+D/HostConnection: HostConnection::get() New Host Connection established 0xe921fb20, tid 10162
+D/goldfish-address-space: allocate: Ask for block of size 0x100
+    allocate: ioctl allocate returned offset 0x3fdfbb000 size 0x2000
+D/HostConnection: HostComposition ext ANDROID_EMU_CHECKSUM_HELPER_v1 ANDROID_EMU_native_sync_v2 ANDROID_EMU_native_sync_v3 ANDROID_EMU_native_sync_v4 ANDROID_EMU_dma_v1 ANDROID_EMU_direct_mem ANDROID_EMU_host_composition_v1 ANDROID_EMU_host_composition_v2 ANDROID_EMU_YUV_Cache ANDROID_EMU_async_unmap_buffer GL_OES_vertex_array_object GL_KHR_texture_compression_astc_ldr ANDROID_EMU_gles_max_version_2
+W/om.example.ipfs: type=1400 audit(0.0:72339): avc: denied { bind } for scontext=u:r:untrusted_app:s0:c156,c256,c512,c768 tcontext=u:r:untrusted_app:s0:c156,c256,c512,c768 tclass=netlink_route_socket permissive=0 b/155595000 app=com.example.ipfs
+I/chatty: uid=10156(com.example.ipfs) identical 9 lines
+W/om.example.ipfs: type=1400 audit(0.0:72367): avc: denied { bind } for scontext=u:r:untrusted_app:s0:c156,c256,c512,c768 tcontext=u:r:untrusted_app:s0:c156,c256,c512,c768 tclass=netlink_route_socket permissive=0 b/155595000 app=com.example.ipfs
+E/GoLog: 2021-03-28T06:05:53.640Z	[33mWARN[0m	nat	go-log/log.go:180	failed to establish port mapping: %!s(<nil>)
+W/om.example.ipfs: type=1400 audit(0.0:72368): avc: denied { bind } for scontext=u:r:untrusted_app:s0:c156,c256,c512,c768 tcontext=u:r:untrusted_app:s0:c156,c256,c512,c768 tclass=netlink_route_socket permissive=0 b/155595000 app=com.example.ipfs
+W/om.example.ipfs: type=1400 audit(0.0:72369): avc: denied { bind } for scontext=u:r:untrusted_app:s0:c156,c256,c512,c768 tcontext=u:r:untrusted_app:s0:c156,c256,c512,c768 tclass=netlink_route_socket permissive=0 b/155595000 app=com.example.ipfs
+I/chatty: uid=10156(com.example.ipfs) identical 66 lines
+W/om.example.ipfs: type=1400 audit(0.0:72453): avc: denied { bind } for scontext=u:r:untrusted_app:s0:c156,c256,c512,c768 tcontext=u:r:untrusted_app:s0:c156,c256,c512,c768 tclass=netlink_route_socket permissive=0 b/155595000 app=com.example.ipfs
+E/GoLog: 2021-03-28T06:06:13.641Z	[33mWARN[0m	nat	go-log/log.go:180	failed to establish port mapping: %!s(<nil>)
+W/om.example.ipfs: type=1400 audit(0.0:72473): avc: denied { bind } for scontext=u:r:untrusted_app:s0:c156,c256,c512,c768 tcontext=u:r:untrusted_app:s0:c156,c256,c512,c768 tclass=netlink_route_socket permissive=0 b/155595000 app=com.example.ipfs
+I/chatty: uid=10156(com.example.ipfs) identical 64 lines
+W/om.example.ipfs: type=1400 audit(0.0:72602): avc: denied { bind } for scontext=u:r:untrusted_app:s0:c156,c256,c512,c768 tcontext=u:r:untrusted_app:s0:c156,c256,c512,c768 tclass=netlink_route_socket permissive=0 b/155595000 app=com.example.ipfs
+E/GoLog: 2021-03-28T06:06:33.642Z	[33mWARN[0m	nat	go-log/log.go:180	failed to establish port mapping: %!s(<nil>)
+W/om.example.ipfs: type=1400 audit(0.0:72603): avc: denied { bind } for scontext=u:r:untrusted_app:s0:c156,c256,c512,c768 tcontext=u:r:untrusted_app:s0:c156,c256,c512,c768 tclass=netlink_route_socket permissive=0 b/155595000 app=com.example.ipfs
+I/chatty: uid=10156(com.example.ipfs) identical 8 lines
+W/om.example.ipfs: type=1400 audit(0.0:72614): avc: denied { bind } for scontext=u:r:untrusted_app:s0:c156,c256,c512,c768 tcontext=u:r:untrusted_app:s0:c156,c256,c512,c768 tclass=netlink_route_socket permissive=0 b/155595000 app=com.example.ipfs
+W/om.example.ipfs: type=1400 audit(0.0:72615): avc: denied { bind } for scontext=u:r:untrusted_app:s0:c156,c256,c512,c768 tcontext=u:r:untrusted_app:s0:c156,c256,c512,c768 tclass=netlink_route_socket permissive=0 b/155595000 app=com.example.ipfs
+I/chatty: uid=10156(com.example.ipfs) identical 12 lines
+W/om.example.ipfs: type=1400 audit(0.0:72639): avc: denied { bind } for scontext=u:r:untrusted_app:s0:c156,c256,c512,c768 tcontext=u:r:untrusted_app:s0:c156,c256,c512,c768 tclass=netlink_route_socket permissive=0 b/155595000 app=com.example.ipfs
+W/om.example.ipfs: type=1400 audit(0.0:72641): avc: denied { bind } for scontext=u:r:untrusted_app:s0:c156,c256,c512,c768 tcontext=u:r:untrusted_app:s0:c156,c256,c512,c768 tclass=netlink_route_socket permissive=0 b/155595000 app=com.example.ipfs
+I/chatty: uid=10156(com.example.ipfs) identical 50 lines
+W/om.example.ipfs: type=1400 audit(0.0:72750): avc: denied { bind } for scontext=u:r:untrusted_app:s0:c156,c256,c512,c768 tcontext=u:r:untrusted_app:s0:c156,c256,c512,c768 tclass=netlink_route_socket permissive=0 b/155595000 app=com.example.ipfs
+E/GoLog: 2021-03-28T06:06:53.643Z	[33mWARN[0m	nat	go-log/log.go:180	failed to establish port mapping: %!s(<nil>)
+W/om.example.ipfs: type=1400 audit(0.0:72751): avc: denied { bind } for scontext=u:r:untrusted_app:s0:c156,c256,c512,c768 tcontext=u:r:untrusted_app:s0:c156,c256,c512,c768 tclass=netlink_route_socket permissive=0 b/155595000 app=com.example.ipfs
+I/chatty: uid=10156(com.example.ipfs) identical 41 lines
+W/om.example.ipfs: type=1400 audit(0.0:72816): avc: denied { bind } for scontext=u:r:untrusted_app:s0:c156,c256,c512,c768 tcontext=u:r:untrusted_app:s0:c156,c256,c512,c768 tclass=netlink_route_socket permissive=0 b/155595000 app=com.example.ipfs
+W/om.example.ipfs: type=1400 audit(0.0:72817): avc: denied { bind } for scontext=u:r:untrusted_app:s0:c156,c256,c512,c768 tcontext=u:r:untrusted_app:s0:c156,c256,c512,c768 tclass=netlink_route_socket permissive=0 b/155595000 app=com.example.ipfs
+I/chatty: uid=10156(com.example.ipfs) identical 15 lines
+W/om.example.ipfs: type=1400 audit(0.0:72841): avc: denied { bind } for scontext=u:r:untrusted_app:s0:c156,c256,c512,c768 tcontext=u:r:untrusted_app:s0:c156,c256,c512,c768 tclass=netlink_route_socket permissive=0 b/155595000 app=com.example.ipfs
+E/GoLog: 2021-03-28T06:07:13.643Z	[33mWARN[0m	nat	go-log/log.go:180	failed to establish port mapping: %!s(<nil>)
+W/om.example.ipfs: type=1400 audit(0.0:72842): avc: denied { bind } for scontext=u:r:untrusted_app:s0:c156,c256,c512,c768 tcontext=u:r:untrusted_app:s0:c156,c256,c512,c768 tclass=netlink_route_socket permissive=0 b/155595000 app=com.example.ipfs
+I/chatty: uid=10156(com.example.ipfs) identical 26 lines
+W/om.example.ipfs: type=1400 audit(0.0:72879): avc: denied { bind } for scontext=u:r:untrusted_app:s0:c156,c256,c512,c768 tcontext=u:r:untrusted_app:s0:c156,c256,c512,c768 tclass=netlink_route_socket permissive=0 b/155595000 app=com.example.ipfs
+W/om.example.ipfs: type=1400 audit(0.0:72882): avc: denied { bind } for scontext=u:r:untrusted_app:s0:c156,c256,c512,c768 tcontext=u:r:untrusted_app:s0:c156,c256,c512,c768 tclass=netlink_route_socket permissive=0 b/155595000 app=com.example.ipfs
+I/chatty: uid=10156(com.example.ipfs) identical 41 lines
+W/om.example.ipfs: type=1400 audit(0.0:72965): avc: denied { bind } for scontext=u:r:untrusted_app:s0:c156,c256,c512,c768 tcontext=u:r:untrusted_app:s0:c156,c256,c512,c768 tclass=netlink_route_socket permissive=0 b/155595000 app=com.example.ipfs
+E/GoLog: 2021-03-28T06:07:33.644Z	[33mWARN[0m	nat	go-log/log.go:180	failed to establish port mapping: %!s(<nil>)
+W/om.example.ipfs: type=1400 audit(0.0:72966): avc: denied { bind } for scontext=u:r:untrusted_app:s0:c156,c256,c512,c768 tcontext=u:r:untrusted_app:s0:c156,c256,c512,c768 tclass=netlink_route_socket permissive=0 b/155595000 app=com.example.ipfs
+I/chatty: uid=10156(com.example.ipfs) identical 5 lines
+W/om.example.ipfs: type=1400 audit(0.0:72974): avc: denied { bind } for scontext=u:r:untrusted_app:s0:c156,c256,c512,c768 tcontext=u:r:untrusted_app:s0:c156,c256,c512,c768 tclass=netlink_route_socket permissive=0 b/155595000 app=com.example.ipfs
+W/om.example.ipfs: type=1400 audit(0.0:72976): avc: denied { bind } for scontext=u:r:untrusted_app:s0:c156,c256,c512,c768 tcontext=u:r:untrusted_app:s0:c156,c256,c512,c768 tclass=netlink_route_socket permissive=0 b/155595000 app=com.example.ipfs
+I/chatty: uid=10156(com.example.ipfs) identical 7 lines
+W/om.example.ipfs: type=1400 audit(0.0:72987): avc: denied { bind } for scontext=u:r:untrusted_app:s0:c156,c256,c512,c768 tcontext=u:r:untrusted_app:s0:c156,c256,c512,c768 tclass=netlink_route_socket permissive=0 b/155595000 app=com.example.ipfs
+W/om.example.ipfs: type=1400 audit(0.0:72988): avc: denied { bind } for scontext=u:r:untrusted_app:s0:c156,c256,c512,c768 tcontext=u:r:untrusted_app:s0:c156,c256,c512,c768 tclass=netlink_route_socket permissive=0 b/155595000 app=com.example.ipfs
+I/chatty: uid=10156(com.example.ipfs) identical 45 lines
+W/om.example.ipfs: type=1400 audit(0.0:73047): avc: denied { bind } for scontext=u:r:untrusted_app:s0:c156,c256,c512,c768 tcontext=u:r:untrusted_app:s0:c156,c256,c512,c768 tclass=netlink_route_socket permissive=0 b/155595000 app=com.example.ipfs
+E/GoLog: 2021-03-28T06:07:53.644Z	[33mWARN[0m	nat	go-log/log.go:180	failed to establish port mapping: %!s(<nil>)
+W/om.example.ipfs: type=1400 audit(0.0:73048): avc: denied { bind } for scontext=u:r:untrusted_app:s0:c156,c256,c512,c768 tcontext=u:r:untrusted_app:s0:c156,c256,c512,c768 tclass=netlink_route_socket permissive=0 b/155595000 app=com.example.ipfs
+I/chatty: uid=10156(com.example.ipfs) identical 73 lines
+W/om.example.ipfs: type=1400 audit(0.0:73128): avc: denied { bind } for scontext=u:r:untrusted_app:s0:c156,c256,c512,c768 tcontext=u:r:untrusted_app:s0:c156,c256,c512,c768 tclass=netlink_route_socket permissive=0 b/155595000 app=com.example.ipfs
+E/GoLog: 2021-03-28T06:08:13.645Z	[33mWARN[0m	nat	go-log/log.go:180	failed to establish port mapping: %!s(<nil>)
+W/om.example.ipfs: type=1400 audit(0.0:73129): avc: denied { bind } for scontext=u:r:untrusted_app:s0:c156,c256,c512,c768 tcontext=u:r:untrusted_app:s0:c156,c256,c512,c768 tclass=netlink_route_socket permissive=0 b/155595000 app=com.example.ipfs
+I/chatty: uid=10156(com.example.ipfs) identical 44 lines
+W/om.example.ipfs: type=1400 audit(0.0:73371): avc: denied { bind } for scontext=u:r:untrusted_app:s0:c156,c256,c512,c768 tcontext=u:r:untrusted_app:s0:c156,c256,c512,c768 tclass=netlink_route_socket permissive=0 b/155595000 app=com.example.ipfs
+W/om.example.ipfs: type=1400 audit(0.0:73372): avc: denied { bind } for scontext=u:r:untrusted_app:s0:c156,c256,c512,c768 tcontext=u:r:untrusted_app:s0:c156,c256,c512,c768 tclass=netlink_route_socket permissive=0 b/155595000 app=com.example.ipfs
+E/GoLog: 2021-03-28T06:08:33.645Z	[33mWARN[0m	nat	go-log/log.go:180	failed to establish port mapping: %!s(<nil>)
+W/om.example.ipfs: type=1400 audit(0.0:73373): avc: denied { bind } for scontext=u:r:untrusted_app:s0:c156,c256,c512,c768 tcontext=u:r:untrusted_app:s0:c156,c256,c512,c768 tclass=netlink_route_socket permissive=0 b/155595000 app=com.example.ipfs
+I/chatty: uid=10156(com.example.ipfs) identical 4 lines
+W/om.example.ipfs: type=1400 audit(0.0:73378): avc: denied { bind } for scontext=u:r:untrusted_app:s0:c156,c256,c512,c768 tcontext=u:r:untrusted_app:s0:c156,c256,c512,c768 tclass=netlink_route_socket permissive=0 b/155595000 app=com.example.ipfs
+W/om.example.ipfs: type=1400 audit(0.0:73379): avc: denied { bind } for scontext=u:r:untrusted_app:s0:c156,c256,c512,c768 tcontext=u:r:untrusted_app:s0:c156,c256,c512,c768 tclass=netlink_route_socket permissive=0 b/155595000 app=com.example.ipfs
+W/om.example.ipfs: type=1400 audit(0.0:73380): avc: denied { bind } for scontext=u:r:untrusted_app:s0:c156,c256,c512,c768 tcontext=u:r:untrusted_app:s0:c156,c256,c512,c768 tclass=netlink_route_socket permissive=0 b/155595000 app=com.example.ipfs
+E/GoLog: 2021-03-28T06:08:38.749Z	[33mWARN[0m	net/identify	go-log/log.go:175	error reading identify message: short buffer
+W/om.example.ipfs: type=1400 audit(0.0:73381): avc: denied { bind } for scontext=u:r:untrusted_app:s0:c156,c256,c512,c768 tcontext=u:r:untrusted_app:s0:c156,c256,c512,c768 tclass=netlink_route_socket permissive=0 b/155595000 app=com.example.ipfs
+I/chatty: uid=10156(com.example.ipfs) identical 6 lines
+W/om.example.ipfs: type=1400 audit(0.0:73388): avc: denied { bind } for scontext=u:r:untrusted_app:s0:c156,c256,c512,c768 tcontext=u:r:untrusted_app:s0:c156,c256,c512,c768 tclass=netlink_route_socket permissive=0 b/155595000 app=com.example.ipfs
+E/GoLog: 2021-03-28T06:08:53.646Z	[33mWARN[0m	nat	go-log/log.go:180	failed to establish port mapping: %!s(<nil>)
+W/om.example.ipfs: type=1400 audit(0.0:73389): avc: denied { bind } for scontext=u:r:untrusted_app:s0:c156,c256,c512,c768 tcontext=u:r:untrusted_app:s0:c156,c256,c512,c768 tclass=netlink_route_socket permissive=0 b/155595000 app=com.example.ipfs
+I/chatty: uid=10156(com.example.ipfs) identical 20 lines
+W/om.example.ipfs: type=1400 audit(0.0:73410): avc: denied { bind } for scontext=u:r:untrusted_app:s0:c156,c256,c512,c768 tcontext=u:r:untrusted_app:s0:c156,c256,c512,c768 tclass=netlink_route_socket permissive=0 b/155595000 app=com.example.ipfs
+E/GoLog: 2021-03-28T06:09:13.646Z	[33mWARN[0m	nat	go-log/log.go:180	failed to establish port mapping: %!s(<nil>)
+W/om.example.ipfs: type=1400 audit(0.0:73411): avc: denied { bind } for scontext=u:r:untrusted_app:s0:c156,c256,c512,c768 tcontext=u:r:untrusted_app:s0:c156,c256,c512,c768 tclass=netlink_route_socket permissive=0 b/155595000 app=com.example.ipfs
+I/chatty: uid=10156(com.example.ipfs) identical 21 lines
+W/om.example.ipfs: type=1400 audit(0.0:73447): avc: denied { bind } for scontext=u:r:untrusted_app:s0:c156,c256,c512,c768 tcontext=u:r:untrusted_app:s0:c156,c256,c512,c768 tclass=netlink_route_socket permissive=0 b/155595000 app=com.example.ipfs
+E/GoLog: 2021-03-28T06:09:33.647Z	[33mWARN[0m	nat	go-log/log.go:180	failed to establish port mapping: %!s(<nil>)
+W/om.example.ipfs: type=1400 audit(0.0:73448): avc: denied { bind } for scontext=u:r:untrusted_app:s0:c156,c256,c512,c768 tcontext=u:r:untrusted_app:s0:c156,c256,c512,c768 tclass=netlink_route_socket permissive=0 b/155595000 app=com.example.ipfs
+I/chatty: uid=10156(com.example.ipfs) identical 3 lines
+W/om.example.ipfs: type=1400 audit(0.0:73452): avc: denied { bind } for scontext=u:r:untrusted_app:s0:c156,c256,c512,c768 tcontext=u:r:untrusted_app:s0:c156,c256,c512,c768 tclass=netlink_route_socket permissive=0 b/155595000 app=com.example.ipfs
+W/om.example.ipfs: type=1400 audit(0.0:73453): avc: denied { bind } for scontext=u:r:untrusted_app:s0:c156,c256,c512,c768 tcontext=u:r:untrusted_app:s0:c156,c256,c512,c768 tclass=netlink_route_socket permissive=0 b/155595000 app=com.example.ipfs
+I/chatty: uid=10156(com.example.ipfs) identical 4 lines
+W/om.example.ipfs: type=1400 audit(0.0:73458): avc: denied { bind } for scontext=u:r:untrusted_app:s0:c156,c256,c512,c768 tcontext=u:r:untrusted_app:s0:c156,c256,c512,c768 tclass=netlink_route_socket permissive=0 b/155595000 app=com.example.ipfs
+W/om.example.ipfs: type=1400 audit(0.0:73459): avc: denied { bind } for scontext=u:r:untrusted_app:s0:c156,c256,c512,c768 tcontext=u:r:untrusted_app:s0:c156,c256,c512,c768 tclass=netlink_route_socket permissive=0 b/155595000 app=com.example.ipfs
+E/GoLog: 2021-03-28T06:09:39.308Z	[33mWARN[0m	net/identify	go-log/log.go:175	error reading identify message: short buffer
+W/om.example.ipfs: type=1400 audit(0.0:73460): avc: denied { bind } for scontext=u:r:untrusted_app:s0:c156,c256,c512,c768 tcontext=u:r:untrusted_app:s0:c156,c256,c512,c768 tclass=netlink_route_socket permissive=0 b/155595000 app=com.example.ipfs
